@@ -31,7 +31,29 @@ const styles = StyleSheet.create({
     // Issue #7949
     padding: `${globalStyles.spacing.dialogInsideMargin} 30px`,
     position: 'absolute',
-    top: globalStyles.spacing.dialogTopOffset
+    top: globalStyles.spacing.dialogTopOffset,
+    // Issue #7930
+    overflowY: 'auto',
+    overflowX: 'hidden',
+    maxWidth: '90%',
+    maxHeight: '90%',
+    boxSizing: 'border-box',
+
+    // Add a custom scrollbar for the element
+    '::-webkit-scrollbar': {
+      width: '10px'
+    },
+    '::-webkit-scrollbar-thumb': {
+      background: globalStyles.color.braveOrange,
+      // same as primary button
+      boxShadow: '0px 1px 5px -1px rgba(0, 0, 0, 0.5)',
+      // match dialog radius
+      borderRadius: '4px'
+    },
+    '::-webkit-scrollbar-track': {
+      boxShadow: 'inset 0 0 4px rgba(0,0,0, 0.3)',
+      borderRadius: '4px'
+    }
   },
 
   // itemList.less

@@ -149,7 +149,7 @@
     "co-mocha": "^1.1.2",
     "cross-env": "^3.1.4",
     "css-loader": "^0.23.0",
-    "electron-builder": "^2.3.1",
+    "electron-builder": "brave/electron-builder#muon-2.58",
     "electron-packager": "brave/electron-packager",
     "empty-port": "0.0.2",
     "enzyme": "^2.6.0",
